@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.no-flash{
+  display: none;
+}
+
+.footer{
+    background-color: #bcbcbc33;
+    border-top: 1px solid #E7E7E7;
+    text-align: center;
+    padding: 20px 0;
+    left: 0;
+    bottom: 0;
+    height: 20px;
+    width: 100%;
+}
+
+/*forms*/
+form{
+  text-align: center;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+}
+label{
+  padding: 0 10px 0 0;
+  margin: 10px;
+  display: inline-block;
+  width: 30%;
+  color: black;
+  font-size: 18px;
+}
+.form-input{
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 7px;
+  width: 79%;
+  margin: 0 auto 10px auto;
+}
+.form-input:target{
+  border: 2px solid #c67100;
+}
+input{
+  background: white;
+  border: none;
+  font-size: 18px;
+  width: 50%;
+}
+button{
+  background: #ffa000;
+  border-radius: 5px;
+  font-size: 18px;
+  border: 2px solid #c67100;
+  width:100px; 
+  margin: 10px -50px; 
+  position:relative;
+  top: 50%; 
+  left: 50%;
+}
+/*end forms*/
+
+/*signup*/
+.sex-dropdown, .exercise-dropdown, .desire-dropdown{
+  font-size: 18px;
+}
+/*end signup*/
+
+/*start nav */
+.default-nav{
+  display: block;
+  width:100%;
+  text-align: center;
+}
+.default-nav a{
+  padding: 2em;
+  text-decoration: none;
+  color: whitesmoke;
+}
+.default-nav-item-wrapper{
+  list-style: none;
+  display: inline-block;
+  width:100%;
+  height:100%;
+  margin:0;
+  padding: 20px 0;
+  background: #2286c3;
+}
+.default-nav-item{
+  display: inline-block;
+  color:#2286c3;
+  font-family: 'Roboto', sans-serif;
+}
+
+ 
+
+/* show desktop stuff */
+@media screen and (min-width: 550px) {
+  /*setting desktop stuff*/
+  .default-nav{
+    display: block;
+  }
+
+  /*removing mobile stuff for desktop view*/
+
+}
+
+/* show mobile stuff */
+@media screen and (max-width: 550px) {
+  /*removing desktop stuff*/
+
+  /*setting mobile stuff for desktop view*/
+
+}

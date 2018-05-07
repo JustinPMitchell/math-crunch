@@ -1,5 +1,5 @@
 {
-  "name": "meanImageEditor",
+  "name": "meanimageeditor",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -26,5 +26,17 @@
     "react-swipeable-views": "^0.12.10",
     "serve-favicon": "~2.4.5",
     "unsplash-api": "^1.2.0"
-  }
+  },
+  "description": "A full-stack MERN boilerplate app",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JustinPMitchell/mern-boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JustinPMitchell/mern-boilerplate/issues"
+  },
+  "homepage": "https://github.com/JustinPMitchell/mern-boilerplate#readme"
 }
