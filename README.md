@@ -21,4 +21,4 @@ POST | /auth/me/from/token | Checks if token is present on browser refresh
 * npm init in client folder
 * npm install in client folder
 * npm run build in client folder
-* npm run start in client folder or main folder
+* npm run start in client folder or main folder# math-crunch
