@@ -8,12 +8,14 @@ import Nav from './layout/Nav.js';
 import Login from './auth/Login.js';
 import Profile from './Profile.js';
 import Signup from './auth/Signup.js';
+import SubjectPage from './subjects/SubjectPage.js';
 
 class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      user: {}
+      user: {},
+      subject: ""
     }
   }
   componentDidMount = () => {
@@ -66,6 +68,10 @@ class App extends Component {
     });
   }
 
+  handleSubjectChange = (e) => {
+    this.setState({subject: e.currentTarget.textContent})
+  }
+
   render() {
     return (
       <div className="App">
@@ -74,13 +80,16 @@ class App extends Component {
             <Nav user={this.state.user} updateUser={this.getUser} />
               <div className="space">
                 <Flash flashType={this.state.flashType} flash={this.state.flash} setFlash={this.setFlash} cancelFlash={this.cancelFlash} />
-                <Route exact path="/" component={() => (<Home user={this.state.user} />)} />
+                <Route exact path="/" component={
+                  () => (<Home user={this.state.user} subject={this.state.subject} handleSubjectChange={this.handleSubjectChange} />)} />
                 <Route path="/login" component={
                   () => (<Login user={this.state.user} setFlash={this.setFlash} updateUser={this.getUser} />)} />
                 <Route path="/signup" component={
                   () => (<Signup user={this.state.user} setFlash={this.setFlash} updateUser={this.getUser} />)} />
                 <Route path="/profile" component={
                   () => (<Profile user={this.state.user} setFlash={this.setFlash} />)} />
+                <Route path="/subject" component={
+                  () => (<SubjectPage user={this.state.user} setFlash={this.setFlash} subject={this.state.subject} />)} />
               </div>
             </div>
           </Router>

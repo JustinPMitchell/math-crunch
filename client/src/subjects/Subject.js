@@ -12,8 +12,8 @@ class Subject extends Component {
   render(){
     return(
       <div className="Subject">
-        <SubjectTitle title = {this.props.title}/>
-        <SubjectImage image = {this.props.image}/>
+        <SubjectTitle title={this.props.title} handleSubjectChange={this.props.handleSubjectChange}/>
+        <SubjectImage image={this.props.image}/>
       </div>
     );
   }

@@ -24,7 +24,7 @@ class Home extends Component {
         <div className="Home">
           {this.state.subjects.map((subject) => {
             return (
-              <Subject title={subject.title} image={subject.image}/>
+              <Subject title={subject.title} image={subject.image} handleSubjectChange={this.props.handleSubjectChange}/>
             )
           })}
 

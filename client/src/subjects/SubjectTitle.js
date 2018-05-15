@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class SubjectTitle extends Component {
   constructor(props) {
@@ -10,7 +11,7 @@ class SubjectTitle extends Component {
   render(){
     return(
       <div className="SubjectTitle">
-        {this.props.title}
+        <Link to="/subject" onClick={this.props.handleSubjectChange}>{this.props.title}</Link>
       </div>
     );
   }
