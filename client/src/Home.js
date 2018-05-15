@@ -9,7 +9,21 @@ class Home extends Component {
       subjects : [
         {
           title: "Pre-Algebra",
-          image: "https://cdn.brainpop.com/math/numbersandoperations/icon.png"
+          image: "https://cdn.brainpop.com/math/numbersandoperations/icon.png",
+          modules : [
+            {
+              title: "Decimal Places",
+              image: "https://www.mathsisfun.com/numbers/images/decimal-number.svg"
+            },
+            {
+              title: "Whole Numbers"
+              image: "http://mathswithmisshumes.weebly.com/uploads/4/9/6/1/49613503/281940283.png?250"
+            },
+            {
+              title: "Rounding",
+              image: "https://ecdn.teacherspayteachers.com/thumbitem/Rounding-Poster-1381314850/original-397544-1.jpg"
+            }
+          ]
         },
         {
           title: "Calculus",
@@ -33,7 +47,6 @@ class Home extends Component {
         </div>
       );
     }else{
-      console.log("handle no meal data");
       return (
         <div className="Home">
         </div>
